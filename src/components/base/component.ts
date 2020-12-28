@@ -1,9 +1,10 @@
-import { NotImplemented } from "../../core/exceptions/not-implemented"
+import { HanuElement } from "../../core/elements/hanu-element"
 
 export abstract class Component {
+  protected _element: HanuElement
   constructor() {
   }
-  public build(): string {
-    throw new NotImplemented()
+  public build(): HanuElement {
+    return this._element
   }
 }

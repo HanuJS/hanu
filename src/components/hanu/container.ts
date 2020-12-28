@@ -1,17 +1,17 @@
-import { HtmlElementComponent } from "../base/html-element-component"
+import { Component } from "../base/component"
+import { HanuElement } from "../../core/elements/hanu-element"
+import { StatelessComponent } from "../base/stateless-component"
 
-export class Container extends HtmlElementComponent  {
-  private _child: HtmlElementComponent | null
+export class Container extends StatelessComponent {
+  private _child: Component | null
   constructor(
     klass: string | string[] | null = null,
     style: { [key: string]: any } | null = null,
     attrs: { [key: string]: any } | null = null,
-    child: HtmlElementComponent | null = null,
+    child: Component | null = null,
   ) {
-    super(klass, style, attrs)
+    super()
+    this._element = new HanuElement('div', klass, style, attrs)
     this._child = child
-  }
-  public build(): string {
-    return `${this.buildTag('div')}${this._child?.build()}</div>`
   }
 }

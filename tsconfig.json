@@ -2,21 +2,22 @@
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    //"declaration": true,
+    //"emitDeclarationOnly": true,
     "experimentalDecorators": true,
+    //"isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["es5", "es6", "dom"],
+    // "lib": ["es5", "es6", "dom"],
     "module": "es6",
-    // "moduleResolution": "node",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "outDir": "./dist/",
     "sourceMap": true,
-    "target": "es6",
+    "target": "es5",
     "typeRoots": ["node_modules/@types", "typings"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
 }
