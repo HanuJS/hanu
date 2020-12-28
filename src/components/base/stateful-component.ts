@@ -1,4 +1,4 @@
-import { Component } from "./component"
+import { Component } from "./component";
 
 export abstract class StatefulComponent extends Component {
   constructor(
@@ -6,8 +6,8 @@ export abstract class StatefulComponent extends Component {
     klass: string | string[] | null = null,
     style: { [key: string]: any } | null = null,
     attrs: { [key: string]: any } | null = null,
-    children: Component[] | null = null,
+    children: Component[] | null = null
   ) {
-    super(tag, klass, style, attrs, children)
+    super(tag, klass, style, attrs, children);
   }
 }
