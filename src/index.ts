@@ -1,6 +1,6 @@
-import { StatefulComponent } from "./components/base/stateful-component";
-import { StatelessComponent } from "./components/base/stateless-component";
-import { Container } from "./components/hanu/container";
+import { StatefulComponent } from "./framework/components/stateful-component";
+import { StatelessComponent } from "./framework/components/stateless-component";
+import { Container } from "./library/container";
 import { NotImplemented } from "./core/exceptions/not-implemented";
 
 export {};
